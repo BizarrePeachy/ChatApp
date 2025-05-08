@@ -1,0 +1,59 @@
+.HomePageDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    text-align: center;
+    width: 100%;
+}
+
+.MainHomeHeader {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.Description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #666;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.ButtonContainer {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.loginButton {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+    background-color: #217dbb;
+}
+
+.SignupButton {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.SignupButton:hover {
+    background-color: #217dbb;
+}
