@@ -3,8 +3,10 @@ const router = express.Router();
 const { pool } = require("./pool");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const secretKey = "MyKey"; // Store securely in an environment variable
 const authenticateUser = require("../middleware/auth");
+
+require("dotenv").config();
+const secretKey = process.env.secretkey;
 
 // Helper function to generate and store a token (modified to check for existing)
 const generateAndStoreToken = async (userId) => {

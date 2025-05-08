@@ -1,7 +1,7 @@
 const mysql = require("mysql2/promise");
 require("dotenv").config();
 
-const ApiPass = process.env.ApiPass;
+const ApiPass = process.env.APIPASS;
 
 const pool = mysql.createPool({
   host: "localhost",

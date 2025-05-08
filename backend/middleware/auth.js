@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
-const secretKey = process.env.JWT_SECRET_KEY || "MyKey"; // Fallback if env var is not set
+require("dotenv").config();
+const secretKey = process.env.secretkey; // Fallback if env var is not set
 const pool = require("../modules/pool").pool; // Import your database pool
 
 const authenticateUser = async (req, res, next) => {
