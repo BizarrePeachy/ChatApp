@@ -1,0 +1,58 @@
+.MainChatDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.ChatContainer {
+    overflow-y: auto;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MessageInput {
+    display: flex;
+    margin-top: 10px;
+}
+
+.MessageTextArea {
+    flex: 1;
+}
+
+.NewMessageStyle {
+    max-width: 70%;
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 80%;
+}
+
+.UsernameMessage {
+}
+
+.TimeStampMessage {
+}
+
+.TopMessageStyle {
+    display: flex;
+    flex-direction: column;
+}
+
+.ChatHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TopArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogoutButton {
+    margin-left: 12px;
+}
